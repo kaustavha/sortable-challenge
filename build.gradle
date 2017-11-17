@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'me.kaustav.sortable.Main'
+sourceSets.main.resources.srcDir 'src/main/'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'com.google.code.gson:gson:2.8.2'
+	testCompile 'junit:junit:4.12'
+}
+
+jar {
+	manifest {
+		attributes(
+			'Manifest-Version': 1.0,
+			'Main-Class': 'me.kaustav.sortable.Main'
+		)
+	}
+
+	baseName = 'sortable-challenge'
+	version = '0.0.1'
+
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+

@@ -1,0 +1,2 @@
+{"title":"Olympus C-2000 Zoom 2.1MP Digital Camera","manufacturer":"Olympus","currency":"USD","price":"93.95"}
+{"title":"Olympus CAMEDIA C-2000ZOOM - Digital camera - compact - 2.1 Mpix - optical zoom: 3 x - supported memory: SM - black, metallic silver","manufacturer":"Olympus","currency":"GBP","price":"99.99"}
